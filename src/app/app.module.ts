@@ -3,12 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+//se importan modulos
+import { SharedModule } from './shared/shared.module';
+import { GifsModule } from './gifs/gifs.module';
+import { HttpClientModule } from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    SharedModule,
+    GifsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
